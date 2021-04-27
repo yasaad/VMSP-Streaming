@@ -1,4 +1,4 @@
-#!c:\automation\pyqt\scripts\python.exe
+#!"c:\vmsp streaming\obs streamer\scripts\python.exe"
 # EASY-INSTALL-ENTRY-SCRIPT: 'future==0.18.2','console_scripts','pasteurize'
 __requires__ = 'future==0.18.2'
 import re

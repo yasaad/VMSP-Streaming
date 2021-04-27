@@ -22,7 +22,7 @@ class StreamAutomation:
     """
     def __init__(self):
         self.OBS = None
-        with open("C:/Automation/stream_key.txt") as f:
+        with open("C:/VMSP Streaming/FFMPEG Streamer/keys/stream_key.txt") as f:
             self.STREAM_ID = f.readline()
             
         # Create Youtube Livestream
@@ -33,8 +33,8 @@ class StreamAutomation:
         client_secrets_file = "client_secrets.json"
         credentials = None
         # Load credentials if authorized once
-        if os.path.exists("C:/Automation/token.pickle"):
-            with open("C:/Automation/token.pickle", "rb") as token:
+        if os.path.exists("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle"):
+            with open("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle", "rb") as token:
                 credentials = pickle.load(token)
 
         if not credentials or not credentials.valid:
@@ -43,7 +43,7 @@ class StreamAutomation:
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(client_secrets_file, scopes)
                 credentials = flow.run_local_server(port=8080, authorization_prompt_message="Authorizing Account")
-                with open("C:/Automation/token.pickle", "wb") as token:
+                with open("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle", "wb") as token:
                     pickle.dump(credentials, token)
         self.youtube = googleapiclient.discovery.build(
             api_service_name, api_version, credentials=credentials)

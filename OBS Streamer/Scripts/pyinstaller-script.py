@@ -1,4 +1,4 @@
-#!c:\automation\pyqt\scripts\python.exe
+#!"c:\vmsp streaming\obs streamer\scripts\python.exe"
 # EASY-INSTALL-ENTRY-SCRIPT: 'PyInstaller==3.4','console_scripts','pyinstaller'
 import re
 import sys

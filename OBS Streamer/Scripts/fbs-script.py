@@ -1,4 +1,4 @@
-#!c:\automation\pyqt\scripts\python.exe
+#!"c:\vmsp streaming\obs streamer\scripts\python.exe"
 # EASY-INSTALL-ENTRY-SCRIPT: 'fbs==0.9.4','console_scripts','fbs'
 __requires__ = 'fbs==0.9.4'
 import re
