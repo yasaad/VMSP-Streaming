@@ -1,0 +1,1 @@
+"C:\Users\VMSP Church\AppData\Local\Programs\Python\Python39\python.exe" "C:\Automation\start_streaming.py" "Divine Liturgy" 2.25
