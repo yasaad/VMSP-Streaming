@@ -16,5 +16,4 @@ This is the streaming system for Virgin Mary and St. Pachomus Coptic Orthodox Ch
   fbs freeze (optionally --debug)
   fbs installer
   ```
-- Frozen exe is located at "OBS Streamer\target\OBS Streamer.exe"
-- Installer is located at "OBS Streamer\target
+- Installer is located at [OBS StreamerSetup.exe]("OBS%20/Streamer/target/OBS%20StreamerSetup.exe)
