@@ -92,7 +92,7 @@ if __name__ == "__main__":
         Args:
             message (str): Message to write with endline if wanted
         """
-        with open("C:/Automation/livestreams_ran.txt", "a") as _f:
+        with open("C:/VMSP Streaming/FFMPEG Streamer/docs/livestreams_ran.txt", "a") as _f:
             _f.write(f"{message}")
 
     startTime = datetime.now().strftime("%H:%M")

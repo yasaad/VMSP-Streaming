@@ -234,7 +234,7 @@ raw_formats = [
     "bgra64le",  
 ]
 
-with open("C:/Automation/test_formats/pixel_formats.bat", 'w') as f:
+with open("C:/VMSP Streaming/FFMPEG Streamer/python/test_formats/pixel_formats.bat", 'w') as f:
     for framerate in framerates:
         for size in sizes:
             for form in raw_formats:
