@@ -124,6 +124,8 @@ if __name__ == "__main__":
         )
     if BOTTOM_LEFT:
         location = "0:main_h-overlay_h+1"
+
+    #add arnndn=model=bd.rnnn to the -af for noise reduction
     cmd = (
         r'"C:\\Program Files\\FFMPEG\\ffmpeg.exe"'
         + " -hide_banner"
@@ -137,7 +139,7 @@ if __name__ == "__main__":
         + " -pix_fmt yuv420p -c:v h264_nvenc -preset p4 -bf 4"
         + " -g 59.94"
         + " -b:v 4500K -maxrate 4500k -bufsize 5000k -b:a 128K"
-        + ' -af "pan=mono|c0=FL, arnndn=model=bd.rnnn"'
+        + ' -af "pan=mono|c0=FL"'
         + f" {stream_address}"
     )
 
