@@ -65,7 +65,7 @@ class StreamAutomation:
             id=broadcast_id
         )
         response = request.execute()
-        return(response["items"][0]["status"])
+        return(response["items"][0]["status"]["lifeCycleStatus"])
 
     def createBroadcast(self, title: str, public=True):
         start_time = datetime.now() + timedelta(hours=5)

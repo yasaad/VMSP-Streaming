@@ -70,10 +70,7 @@ class StreamAutomation:
             id=broadcast_id
         )
         response = request.execute()
-        print("Broadcast Status:")
-        print(response["items"][0]["snippet"]["title"])
-        print(response["items"][0]["status"])
-        return(response["items"][0]["status"])
+        return(response["items"][0]["status"]["lifeCycleStatus"])
 
     def createBroadcast(self, title: str, public=True):
         start_time = datetime.now() + timedelta(hours=5)
@@ -150,7 +147,6 @@ class StreamAutomation:
             part="snippet,status"
         )
         response = request.execute()
-        print(response)
         return(response)  
 
     def turnOnPowerSwitch(self):
