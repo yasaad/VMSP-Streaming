@@ -100,6 +100,7 @@ if __name__ == "__main__":
             # Eve of next day=]
             day = calendar.day_name[date.today().weekday() + 1]
             service_name = f"Eve of {day} Pascha"
+        # TODO: Add custom names for Thrusday Friday Saturday and Resrrection
 
     seconds = int(float(args[2]) * 3600)
     video_title = f"{service_name} - {service_date}"

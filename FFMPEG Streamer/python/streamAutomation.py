@@ -30,7 +30,7 @@ class StreamAutomation:
 
         api_service_name = "youtube"
         api_version = "v3"
-        client_secrets_file = "client_secrets.json"
+        client_secrets_file = "C:/VMSP Streaming/FFMPEG Streamer/keys/client_secrets.json"
         credentials = None
         # Load credentials if authorized once
         if os.path.exists("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle"):

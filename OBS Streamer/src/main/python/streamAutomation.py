@@ -20,9 +20,9 @@ class StreamAutomation:
     """
     StreamAutomation class
     """
-    def __init__(self):
+    def __init__(self, keys):
         self.OBS = None
-        with open("C:/VMSP Streaming/FFMPEG Streamer/keys/stream_key.txt") as f:
+        with open(f"{keys}/stream_key.txt") as f:
             self.STREAM_ID = f.readline()
             
         # Create Youtube Livestream
@@ -30,11 +30,11 @@ class StreamAutomation:
 
         api_service_name = "youtube"
         api_version = "v3"
-        client_secrets_file = "client_secrets.json"
+        client_secrets_file = f"{keys}/client_secrets.json"
         credentials = None
         # Load credentials if authorized once
-        if os.path.exists("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle"):
-            with open("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle", "rb") as token:
+        if os.path.exists(f"{keys}/token.pickle"):
+            with open(f"{keys}/token.pickle", "rb") as token:
                 credentials = pickle.load(token)
 
         if not credentials or not credentials.valid:
@@ -43,7 +43,7 @@ class StreamAutomation:
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(client_secrets_file, scopes)
                 credentials = flow.run_local_server(port=8080, authorization_prompt_message="Authorizing Account")
-                with open("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle", "wb") as token:
+                with open(f"{keys}/token.pickle", "wb") as token:
                     pickle.dump(credentials, token)
         self.youtube = googleapiclient.discovery.build(
             api_service_name, api_version, credentials=credentials)
@@ -131,23 +131,24 @@ class StreamAutomation:
 
     def endBroadcast(self, broadcast_id):
         # pylint: disable=maybe-no-member
-        request = self.youtube.liveBroadcasts().transition(
-            broadcastStatus="complete",
-            id=broadcast_id,
-            part="snippet,status"
-        )
-        response = request.execute()
-        return response  
+        status = self.checkBroadcastStatus(broadcast_id)
+        if status != "live":
+            return self.deleteBroadcast(broadcast_id)
+        else:
+            request = self.youtube.liveBroadcasts().transition(
+                part="snippet,status",
+                broadcastStatus="complete",
+                id=broadcast_id
+            )
+            response = request.execute()
+            return(response)  
 
     def turnOnPowerSwitch(self):
         # Turn power on
         
         switch = dlipower.PowerSwitch(hostname="192.168.1.33", userid="admin", password="1234")
-        # Turn on Mixer
         switch.on("Mixer")
-        # Turn on ATEM
         switch.on("ATEM")
-        # Turn on Amp
         switch.on("Amp")
         while (switch.status("Amp") != "ON"):
             pass
@@ -156,9 +157,7 @@ class StreamAutomation:
         switch = dlipower.PowerSwitch(hostname="192.168.1.33", userid="admin", password="1234")
 
         switch.off("Mixer")
-        # Turn on ATEM
         switch.off("ATEM")
-        # Turn on Amp
         switch.off("Amp")
 
     def startOBS(self):
