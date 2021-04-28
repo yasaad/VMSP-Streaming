@@ -1,0 +1,2231 @@
+('C:\\VMSP Streaming\\OBS Streamer\\target\\PyInstaller\\OBS '
+ 'Streamer\\PYZ-00.pyz',
+ [('multiprocessing.popen_fork',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\numbers.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\hmac.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.semaphore_tracker',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\semaphore_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\queue.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\runpy.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('win32com',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\__init__.py',
+   'PYMODULE'),
+  ('win32com.server.util',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\server\\util.py',
+   'PYMODULE'),
+  ('win32com.server.dispatcher',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\server\\dispatcher.py',
+   'PYMODULE'),
+  ('win32traceutil',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32\\lib\\win32traceutil.py',
+   'PYMODULE'),
+  ('win32com.util',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\win32com\\util.py',
+   'PYMODULE'),
+  ('win32con',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32\\lib\\win32con.py',
+   'PYMODULE'),
+  ('win32com.server.exception',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\server\\exception.py',
+   'PYMODULE'),
+  ('winerror',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32\\lib\\winerror.py',
+   'PYMODULE'),
+  ('win32com.server.policy',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\server\\policy.py',
+   'PYMODULE'),
+  ('win32com.client',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\__init__.py',
+   'PYMODULE'),
+  ('win32com.client.makepy',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\makepy.py',
+   'PYMODULE'),
+  ('pywin.dialogs.status',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\dialogs\\status.py',
+   'PYMODULE'),
+  ('pywin.mfc.thread',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\thread.py',
+   'PYMODULE'),
+  ('pywin.mfc.object',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\object.py',
+   'PYMODULE'),
+  ('pywin.mfc.dialog',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\dialog.py',
+   'PYMODULE'),
+  ('pywin.mfc.window',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\window.py',
+   'PYMODULE'),
+  ('pywin.mfc',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\__init__.py',
+   'PYMODULE'),
+  ('pywin.dialogs',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\dialogs\\__init__.py',
+   'PYMODULE'),
+  ('pywin',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\__init__.py',
+   'PYMODULE'),
+  ('win32com.client.gencache',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\gencache.py',
+   'PYMODULE'),
+  ('win32com.client.selecttlb',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\selecttlb.py',
+   'PYMODULE'),
+  ('pywin.dialogs.list',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\Pythonwin\\pywin\\dialogs\\list.py',
+   'PYMODULE'),
+  ('commctrl',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32\\lib\\commctrl.py',
+   'PYMODULE'),
+  ('win32com.client.genpy',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\genpy.py',
+   'PYMODULE'),
+  ('win32com.client.CLSIDToClass',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\CLSIDToClass.py',
+   'PYMODULE'),
+  ('win32com.client.dynamic',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\dynamic.py',
+   'PYMODULE'),
+  ('win32com.client.build',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\build.py',
+   'PYMODULE'),
+  ('pywintypes',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32\\lib\\pywintypes.py',
+   'PYMODULE'),
+  ('distutils.sysconfig',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\distutils\\sysconfig.py',
+   'PYMODULE'),
+  ('distutils',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\distutils\\__init__.py',
+   'PYMODULE'),
+  ('distutils.log',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\distutils\\log.py',
+   'PYMODULE'),
+  ('distutils.text_file',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\distutils\\text_file.py',
+   'PYMODULE'),
+  ('_osx_support',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_osx_support.py',
+   'PYMODULE'),
+  ('distutils.errors',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\distutils\\errors.py',
+   'PYMODULE'),
+  ('win32com.server',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\server\\__init__.py',
+   'PYMODULE'),
+  ('win32com.universal',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\universal.py',
+   'PYMODULE'),
+  ('win32com.client.util',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32com\\client\\util.py',
+   'PYMODULE'),
+  ('pythoncom',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\pythoncom.py',
+   'PYMODULE'),
+  ('pkg_resources',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.appdirs',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
+   'PYMODULE'),
+  ('win32com.shell.shellcon',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32comext\\shell\\shellcon.py',
+   'PYMODULE'),
+  ('win32com.shell',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32comext\\shell\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.six',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._compat',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
+   'PYMODULE'),
+  ('uuid',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\uuid.py',
+   'PYMODULE'),
+  ('ctypes.util',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('netbios',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\win32\\lib\\netbios.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\sysconfig.py',
+   'PYMODULE'),
+  ('pkg_resources.py31compat',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\py31compat.py',
+   'PYMODULE'),
+  ('pkg_resources.extern',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pkg_resources\\extern\\__init__.py',
+   'PYMODULE'),
+  ('imp',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\imp.py',
+   'PYMODULE'),
+  ('ntpath',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ntpath.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\struct.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\__future__.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\difflib.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ast.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\inspect.py',
+   'PYMODULE'),
+  ('cmd',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\cmd.py',
+   'PYMODULE'),
+  ('bdb',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\bdb.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\opcode.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\dis.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\codeop.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\code.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\glob.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shlex.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pkgutil.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\netrc.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('plistlib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\plistlib.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\platform.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\tokenize.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\tty.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\html\\entities.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ipaddress.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\ssl.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\http\\client.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\mimetypes.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\socketserver.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\http\\server.py',
+   'PYMODULE'),
+  ('optparse',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\optparse.py',
+   'PYMODULE'),
+  ('uu',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\uu.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\quopri.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\utils.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\header.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\charset.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\base64.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\hashlib.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\bisect.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\random.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\message.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\bz2.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\lzma.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_compression.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\gzip.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\tarfile.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\py_compile.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\zipfile.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shutil.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\socket.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\webbrowser.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pydoc.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\getopt.py',
+   'PYMODULE'),
+  ('pdb',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pdb.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\string.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('doctest',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\doctest.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\copy.py',
+   'PYMODULE'),
+  ('stat',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\stat.py',
+   'PYMODULE'),
+  ('genericpath',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('posixpath',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\posixpath.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\signal.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\threading.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\selectors.py',
+   'PYMODULE'),
+  ('_dummy_thread',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_dummy_thread.py',
+   'PYMODULE'),
+  ('dummy_threading',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\dummy_threading.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('os',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\os.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\gettext.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\argparse.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pprint.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pickle.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('streamAutomation',
+   'C:\\VMSP Streaming\\OBS Streamer\\src\\main\\python\\streamAutomation.py',
+   'PYMODULE'),
+  ('googleapiclient.http',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\http.py',
+   'PYMODULE'),
+  ('googleapiclient.model',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\model.py',
+   'PYMODULE'),
+  ('googleapiclient._auth',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\_auth.py',
+   'PYMODULE'),
+  ('google_auth_httplib2',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google_auth_httplib2.py',
+   'PYMODULE'),
+  ('google.auth.transport',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\transport\\__init__.py',
+   'PYMODULE'),
+  ('google.auth.transport.mtls',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\transport\\mtls.py',
+   'PYMODULE'),
+  ('google.auth.transport._mtls_helper',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\transport\\_mtls_helper.py',
+   'PYMODULE'),
+  ('google.auth.exceptions',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\exceptions.py',
+   'PYMODULE'),
+  ('google.auth.credentials',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\credentials.py',
+   'PYMODULE'),
+  ('google.auth._helpers',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\_helpers.py',
+   'PYMODULE'),
+  ('google.auth',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\__init__.py',
+   'PYMODULE'),
+  ('google.auth._default',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\_default.py',
+   'PYMODULE'),
+  ('google.auth.compute_engine._metadata',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\compute_engine\\_metadata.py',
+   'PYMODULE'),
+  ('google.auth.app_engine',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\app_engine.py',
+   'PYMODULE'),
+  ('google.oauth2.service_account',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\service_account.py',
+   'PYMODULE'),
+  ('google.oauth2._client',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\_client.py',
+   'PYMODULE'),
+  ('google.oauth2.credentials',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\credentials.py',
+   'PYMODULE'),
+  ('google.oauth2.reauth',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\reauth.py',
+   'PYMODULE'),
+  ('google.oauth2.challenges',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\challenges.py',
+   'PYMODULE'),
+  ('google.oauth2',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\__init__.py',
+   'PYMODULE'),
+  ('google.oauth2.sts',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\sts.py',
+   'PYMODULE'),
+  ('google.oauth2.utils',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\oauth2\\utils.py',
+   'PYMODULE'),
+  ('google.auth.transport._http_client',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\transport\\_http_client.py',
+   'PYMODULE'),
+  ('google.auth.identity_pool',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\identity_pool.py',
+   'PYMODULE'),
+  ('google.auth.aws',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\google\\auth\\aws.py',
+   'PYMODULE'),
+  ('google.auth.external_account',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\external_account.py',
+   'PYMODULE'),
+  ('google.auth.impersonated_credentials',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\impersonated_credentials.py',
+   'PYMODULE'),
+  ('google.auth.compute_engine',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\compute_engine\\__init__.py',
+   'PYMODULE'),
+  ('google.auth.compute_engine.credentials',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\compute_engine\\credentials.py',
+   'PYMODULE'),
+  ('google.auth.iam',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\google\\auth\\iam.py',
+   'PYMODULE'),
+  ('google.auth.jwt',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\google\\auth\\jwt.py',
+   'PYMODULE'),
+  ('google.auth.crypt.es256',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\crypt\\es256.py',
+   'PYMODULE'),
+  ('google.auth.crypt.base',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\crypt\\base.py',
+   'PYMODULE'),
+  ('cachetools',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\cachetools\\__init__.py',
+   'PYMODULE'),
+  ('cachetools.ttl',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\ttl.py',
+   'PYMODULE'),
+  ('cachetools.rr',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\rr.py',
+   'PYMODULE'),
+  ('cachetools.mru',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\mru.py',
+   'PYMODULE'),
+  ('cachetools.lru',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\lru.py',
+   'PYMODULE'),
+  ('cachetools.lfu',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\lfu.py',
+   'PYMODULE'),
+  ('cachetools.fifo',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\fifo.py',
+   'PYMODULE'),
+  ('cachetools.decorators',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\cachetools\\decorators.py',
+   'PYMODULE'),
+  ('cachetools.keys',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\keys.py',
+   'PYMODULE'),
+  ('cachetools.cache',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\cachetools\\cache.py',
+   'PYMODULE'),
+  ('google.auth._service_account_info',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\_service_account_info.py',
+   'PYMODULE'),
+  ('google.auth.crypt',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\crypt\\__init__.py',
+   'PYMODULE'),
+  ('google.auth.crypt.rsa',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\crypt\\rsa.py',
+   'PYMODULE'),
+  ('google.auth.crypt._python_rsa',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\crypt\\_python_rsa.py',
+   'PYMODULE'),
+  ('rsa',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\__init__.py',
+   'PYMODULE'),
+  ('rsa.pkcs1',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\pkcs1.py',
+   'PYMODULE'),
+  ('rsa.core',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\core.py',
+   'PYMODULE'),
+  ('rsa.common',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\common.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\typing.py',
+   'PYMODULE'),
+  ('rsa.key',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\key.py',
+   'PYMODULE'),
+  ('pyasn1.type.namedtype',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\namedtype.py',
+   'PYMODULE'),
+  ('pyasn1.type.tagmap',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\tagmap.py',
+   'PYMODULE'),
+  ('pyasn1.type.tag',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\pyasn1\\type\\tag.py',
+   'PYMODULE'),
+  ('pyasn1.error',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\pyasn1\\error.py',
+   'PYMODULE'),
+  ('pyasn1',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\pyasn1\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.debug',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\pyasn1\\debug.py',
+   'PYMODULE'),
+  ('pyasn1.compat.octets',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\compat\\octets.py',
+   'PYMODULE'),
+  ('pyasn1.compat',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.compat.string',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\compat\\string.py',
+   'PYMODULE'),
+  ('pyasn1.compat.dateandtime',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\compat\\dateandtime.py',
+   'PYMODULE'),
+  ('pyasn1.compat.binary',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\compat\\binary.py',
+   'PYMODULE'),
+  ('pyasn1.compat.calling',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\compat\\calling.py',
+   'PYMODULE'),
+  ('pyasn1.type.univ',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\univ.py',
+   'PYMODULE'),
+  ('pyasn1.type.namedval',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\namedval.py',
+   'PYMODULE'),
+  ('pyasn1.type.constraint',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\constraint.py',
+   'PYMODULE'),
+  ('pyasn1.type.error',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\error.py',
+   'PYMODULE'),
+  ('pyasn1.type.base',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\base.py',
+   'PYMODULE'),
+  ('pyasn1.compat.integer',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\compat\\integer.py',
+   'PYMODULE'),
+  ('pyasn1.codec.ber.eoo',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\ber\\eoo.py',
+   'PYMODULE'),
+  ('pyasn1.codec.ber',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\ber\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec.ber.encoder',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\ber\\encoder.py',
+   'PYMODULE'),
+  ('pyasn1.type.useful',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\useful.py',
+   'PYMODULE'),
+  ('pyasn1.type.char',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\char.py',
+   'PYMODULE'),
+  ('pyasn1.codec.ber.decoder',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\ber\\decoder.py',
+   'PYMODULE'),
+  ('pyasn1.codec',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.type',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.type.opentype',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\type\\opentype.py',
+   'PYMODULE'),
+  ('pyasn1.codec.der.encoder',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\der\\encoder.py',
+   'PYMODULE'),
+  ('pyasn1.codec.cer.encoder',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\cer\\encoder.py',
+   'PYMODULE'),
+  ('pyasn1.codec.cer',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\cer\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec.cer.decoder',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\cer\\decoder.py',
+   'PYMODULE'),
+  ('rsa.asn1',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\asn1.py',
+   'PYMODULE'),
+  ('rsa.randnum',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\randnum.py',
+   'PYMODULE'),
+  ('rsa.pem',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\pem.py',
+   'PYMODULE'),
+  ('rsa.prime',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\prime.py',
+   'PYMODULE'),
+  ('rsa.parallel',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\parallel.py',
+   'PYMODULE'),
+  ('rsa.transform',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\rsa\\transform.py',
+   'PYMODULE'),
+  ('pyasn1_modules.rfc5208',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1_modules\\rfc5208.py',
+   'PYMODULE'),
+  ('pyasn1_modules.rfc2251',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1_modules\\rfc2251.py',
+   'PYMODULE'),
+  ('pyasn1_modules.rfc2459',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1_modules\\rfc2459.py',
+   'PYMODULE'),
+  ('pyasn1_modules.pem',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1_modules\\pem.py',
+   'PYMODULE'),
+  ('pyasn1_modules',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1_modules\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec.der.decoder',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\der\\decoder.py',
+   'PYMODULE'),
+  ('pyasn1.codec.der',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\pyasn1\\codec\\der\\__init__.py',
+   'PYMODULE'),
+  ('google.auth.crypt._cryptography_rsa',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\crypt\\_cryptography_rsa.py',
+   'PYMODULE'),
+  ('google.auth._cloud_sdk',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\_cloud_sdk.py',
+   'PYMODULE'),
+  ('google.auth.environment_vars',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\environment_vars.py',
+   'PYMODULE'),
+  ('google.auth.version',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\version.py',
+   'PYMODULE'),
+  ('google', '-', 'PYMODULE'),
+  ('googleapiclient._helpers',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\_helpers.py',
+   'PYMODULE'),
+  ('googleapiclient',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\__init__.py',
+   'PYMODULE'),
+  ('googleapiclient.discovery_cache',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\discovery_cache\\__init__.py',
+   'PYMODULE'),
+  ('googleapiclient.discovery_cache.file_cache',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\discovery_cache\\file_cache.py',
+   'PYMODULE'),
+  ('googleapiclient.discovery_cache.appengine_memcache',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\discovery_cache\\appengine_memcache.py',
+   'PYMODULE'),
+  ('googleapiclient.discovery_cache.base',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\discovery_cache\\base.py',
+   'PYMODULE'),
+  ('googleapiclient.mimeparse',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\mimeparse.py',
+   'PYMODULE'),
+  ('email.mime.nonmultipart',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\mime\\nonmultipart.py',
+   'PYMODULE'),
+  ('email.mime',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\mime\\__init__.py',
+   'PYMODULE'),
+  ('email.mime.base',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\mime\\base.py',
+   'PYMODULE'),
+  ('email.mime.multipart',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\email\\mime\\multipart.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('httplib2',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\httplib2\\__init__.py',
+   'PYMODULE'),
+  ('httplib2.certs',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\httplib2\\certs.py',
+   'PYMODULE'),
+  ('certifi',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\certifi\\__init__.py',
+   'PYMODULE'),
+  ('certifi.core',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\certifi\\core.py',
+   'PYMODULE'),
+  ('httplib2.iri2uri',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\httplib2\\iri2uri.py',
+   'PYMODULE'),
+  ('httplib2.error',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\httplib2\\error.py',
+   'PYMODULE'),
+  ('httplib2.auth',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\httplib2\\auth.py',
+   'PYMODULE'),
+  ('pyparsing',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\pyparsing.py',
+   'PYMODULE'),
+  ('httplib2.socks',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\httplib2\\socks.py',
+   'PYMODULE'),
+  ('six',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\six.py',
+   'PYMODULE'),
+  ('google.auth.transport.requests',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\auth\\transport\\requests.py',
+   'PYMODULE'),
+  ('urllib3.contrib.pyopenssl',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'PYMODULE'),
+  ('urllib3.contrib',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\contrib\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib._appengine_environ',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\contrib\\_appengine_environ.py',
+   'PYMODULE'),
+  ('idna',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\idna\\uts46data.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('urllib3.packages.six',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\packages\\six.py',
+   'PYMODULE'),
+  ('urllib3.packages',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\packages\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.packages.ssl_match_hostname',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\packages\\ssl_match_hostname\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.packages.ssl_match_hostname._implementation',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\packages\\ssl_match_hostname\\_implementation.py',
+   'PYMODULE'),
+  ('urllib3.util',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.util.wait',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\wait.py',
+   'PYMODULE'),
+  ('urllib3.util.url',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\url.py',
+   'PYMODULE'),
+  ('urllib3.exceptions',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\exceptions.py',
+   'PYMODULE'),
+  ('urllib3.util.timeout',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\timeout.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\ssl_.py',
+   'PYMODULE'),
+  ('urllib3.util.ssltransport',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\ssltransport.py',
+   'PYMODULE'),
+  ('urllib3.util.retry',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\retry.py',
+   'PYMODULE'),
+  ('urllib3.util.response',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\response.py',
+   'PYMODULE'),
+  ('urllib3.util.request',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\request.py',
+   'PYMODULE'),
+  ('urllib3.util.connection',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\connection.py',
+   'PYMODULE'),
+  ('urllib3',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\urllib3\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.response',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\urllib3\\response.py',
+   'PYMODULE'),
+  ('urllib3.connection',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\connection.py',
+   'PYMODULE'),
+  ('urllib3.util.proxy',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\proxy.py',
+   'PYMODULE'),
+  ('urllib3._collections',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\_collections.py',
+   'PYMODULE'),
+  ('urllib3.poolmanager',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\poolmanager.py',
+   'PYMODULE'),
+  ('urllib3.request',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\urllib3\\request.py',
+   'PYMODULE'),
+  ('urllib3.filepost',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\urllib3\\filepost.py',
+   'PYMODULE'),
+  ('urllib3.fields',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\urllib3\\fields.py',
+   'PYMODULE'),
+  ('urllib3.connectionpool',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\connectionpool.py',
+   'PYMODULE'),
+  ('urllib3.util.queue',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\util\\queue.py',
+   'PYMODULE'),
+  ('urllib3._version',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\urllib3\\_version.py',
+   'PYMODULE'),
+  ('urllib3.packages.backports.makefile',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\packages\\backports\\makefile.py',
+   'PYMODULE'),
+  ('urllib3.packages.backports',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\packages\\backports\\__init__.py',
+   'PYMODULE'),
+  ('requests.exceptions',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\exceptions.py',
+   'PYMODULE'),
+  ('requests.adapters',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\adapters.py',
+   'PYMODULE'),
+  ('urllib3.contrib.socks',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\urllib3\\contrib\\socks.py',
+   'PYMODULE'),
+  ('requests.auth',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\auth.py',
+   'PYMODULE'),
+  ('requests._internal_utils',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\_internal_utils.py',
+   'PYMODULE'),
+  ('requests.cookies',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\cookies.py',
+   'PYMODULE'),
+  ('requests.structures',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\structures.py',
+   'PYMODULE'),
+  ('requests.utils',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\utils.py',
+   'PYMODULE'),
+  ('requests.certs',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\certs.py',
+   'PYMODULE'),
+  ('requests.__version__',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\__version__.py',
+   'PYMODULE'),
+  ('requests.compat',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\compat.py',
+   'PYMODULE'),
+  ('http.cookies',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\http\\cookies.py',
+   'PYMODULE'),
+  ('chardet',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\__init__.py',
+   'PYMODULE'),
+  ('chardet.version',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\version.py',
+   'PYMODULE'),
+  ('chardet.enums',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\enums.py',
+   'PYMODULE'),
+  ('chardet.universaldetector',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\universaldetector.py',
+   'PYMODULE'),
+  ('chardet.sbcsgroupprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\sbcsgroupprober.py',
+   'PYMODULE'),
+  ('chardet.sbcharsetprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\sbcharsetprober.py',
+   'PYMODULE'),
+  ('chardet.charsetprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\charsetprober.py',
+   'PYMODULE'),
+  ('chardet.langturkishmodel',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\langturkishmodel.py',
+   'PYMODULE'),
+  ('chardet.langthaimodel',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\langthaimodel.py',
+   'PYMODULE'),
+  ('chardet.langrussianmodel',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\langrussianmodel.py',
+   'PYMODULE'),
+  ('chardet.langhebrewmodel',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\langhebrewmodel.py',
+   'PYMODULE'),
+  ('chardet.langgreekmodel',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\langgreekmodel.py',
+   'PYMODULE'),
+  ('chardet.langbulgarianmodel',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\langbulgarianmodel.py',
+   'PYMODULE'),
+  ('chardet.hebrewprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\hebrewprober.py',
+   'PYMODULE'),
+  ('chardet.mbcsgroupprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\mbcsgroupprober.py',
+   'PYMODULE'),
+  ('chardet.euctwprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\euctwprober.py',
+   'PYMODULE'),
+  ('chardet.mbcssm',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\mbcssm.py',
+   'PYMODULE'),
+  ('chardet.chardistribution',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\chardistribution.py',
+   'PYMODULE'),
+  ('chardet.jisfreq',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\jisfreq.py',
+   'PYMODULE'),
+  ('chardet.big5freq',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\big5freq.py',
+   'PYMODULE'),
+  ('chardet.gb2312freq',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\gb2312freq.py',
+   'PYMODULE'),
+  ('chardet.euckrfreq',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\euckrfreq.py',
+   'PYMODULE'),
+  ('chardet.euctwfreq',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\euctwfreq.py',
+   'PYMODULE'),
+  ('chardet.codingstatemachine',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\codingstatemachine.py',
+   'PYMODULE'),
+  ('chardet.mbcharsetprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\mbcharsetprober.py',
+   'PYMODULE'),
+  ('chardet.big5prober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\big5prober.py',
+   'PYMODULE'),
+  ('chardet.cp949prober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\cp949prober.py',
+   'PYMODULE'),
+  ('chardet.euckrprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\euckrprober.py',
+   'PYMODULE'),
+  ('chardet.gb2312prober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\gb2312prober.py',
+   'PYMODULE'),
+  ('chardet.eucjpprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\eucjpprober.py',
+   'PYMODULE'),
+  ('chardet.jpcntx',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\jpcntx.py',
+   'PYMODULE'),
+  ('chardet.sjisprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\sjisprober.py',
+   'PYMODULE'),
+  ('chardet.utf8prober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\utf8prober.py',
+   'PYMODULE'),
+  ('chardet.latin1prober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\latin1prober.py',
+   'PYMODULE'),
+  ('chardet.escprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\escprober.py',
+   'PYMODULE'),
+  ('chardet.escsm',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\chardet\\escsm.py',
+   'PYMODULE'),
+  ('chardet.charsetgroupprober',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\chardet\\charsetgroupprober.py',
+   'PYMODULE'),
+  ('requests.models',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\models.py',
+   'PYMODULE'),
+  ('requests.status_codes',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\status_codes.py',
+   'PYMODULE'),
+  ('requests.hooks',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\hooks.py',
+   'PYMODULE'),
+  ('requests',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\__init__.py',
+   'PYMODULE'),
+  ('requests.api',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\requests\\api.py',
+   'PYMODULE'),
+  ('requests.sessions',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\sessions.py',
+   'PYMODULE'),
+  ('requests.packages',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests\\packages.py',
+   'PYMODULE'),
+  ('googleapiclient.errors',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\errors.py',
+   'PYMODULE'),
+  ('googleapiclient.discovery',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\discovery.py',
+   'PYMODULE'),
+  ('googleapiclient.schema',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\googleapiclient\\schema.py',
+   'PYMODULE'),
+  ('google.api_core.client_options',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\api_core\\client_options.py',
+   'PYMODULE'),
+  ('google.api_core',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\api_core\\__init__.py',
+   'PYMODULE'),
+  ('google.api_core.version',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google\\api_core\\version.py',
+   'PYMODULE'),
+  ('uritemplate',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\uritemplate\\__init__.py',
+   'PYMODULE'),
+  ('uritemplate.api',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\uritemplate\\api.py',
+   'PYMODULE'),
+  ('uritemplate.template',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\uritemplate\\template.py',
+   'PYMODULE'),
+  ('uritemplate.variable',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\uritemplate\\variable.py',
+   'PYMODULE'),
+  ('uritemplate.orderedset',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\uritemplate\\orderedset.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib.flow',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google_auth_oauthlib\\flow.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google_auth_oauthlib\\__init__.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib.interactive',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google_auth_oauthlib\\interactive.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib.helpers',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\google_auth_oauthlib\\helpers.py',
+   'PYMODULE'),
+  ('requests_oauthlib',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests_oauthlib\\__init__.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth2_session',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests_oauthlib\\oauth2_session.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.utils',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\utils.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.base',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\base.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.tokens',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\tokens.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.request_validator',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\request_validator.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.refresh_token',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\refresh_token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.base',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\base.py',
+   'PYMODULE'),
+  ('oauthlib.uri_validate',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\uri_validate.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.client_credentials',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\client_credentials.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\resource_owner_password_credentials.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.implicit',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\implicit.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.authorization_code',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\authorization_code.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.errors',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\errors.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.pre_configured',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\pre_configured.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.revocation',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\revocation.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.resource',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\resource.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.token',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.metadata',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\metadata.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.introspect',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\introspect.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.authorization',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\authorization.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.service_application',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\service_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.parameters',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\parameters.py',
+   'PYMODULE'),
+  ('oauthlib.signals',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\oauthlib\\signals.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.backend_application',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\backend_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.legacy_application',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\legacy_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.mobile_application',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\mobile_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.web_application',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\web_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.base',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\base.py',
+   'PYMODULE'),
+  ('oauthlib',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.common',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\oauthlib\\common.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth2_auth',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests_oauthlib\\oauth2_auth.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth1_session',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests_oauthlib\\oauth1_session.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.errors',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\errors.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.pre_configured',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\pre_configured.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.signature_only',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\signature_only.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.resource',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\resource.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.access_token',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\access_token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.authorization',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\authorization.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.request_token',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\request_token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.base',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\base.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.utils',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\utils.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.signature',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\signature.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.request_validator',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\request_validator.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.parameters',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\parameters.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth1_auth',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\requests_oauthlib\\oauth1_auth.py',
+   'PYMODULE'),
+  ('wsgiref.util',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\wsgiref\\util.py',
+   'PYMODULE'),
+  ('wsgiref',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\wsgiref\\__init__.py',
+   'PYMODULE'),
+  ('wsgiref.simple_server',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\wsgiref\\simple_server.py',
+   'PYMODULE'),
+  ('wsgiref.handlers',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\wsgiref\\handlers.py',
+   'PYMODULE'),
+  ('wsgiref.headers',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\wsgiref\\headers.py',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\secrets.py',
+   'PYMODULE'),
+  ('dlipower',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\dlipower\\__init__.py',
+   'PYMODULE'),
+  ('dlipower.dlipower',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\dlipower\\dlipower.py',
+   'PYMODULE'),
+  ('bs4',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\bs4\\__init__.py',
+   'PYMODULE'),
+  ('bs4.element',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\bs4\\element.py',
+   'PYMODULE'),
+  ('bs4.formatter',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\bs4\\formatter.py',
+   'PYMODULE'),
+  ('soupsieve',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\soupsieve\\__init__.py',
+   'PYMODULE'),
+  ('soupsieve.css_parser',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\soupsieve\\css_parser.py',
+   'PYMODULE'),
+  ('soupsieve.css_match',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\soupsieve\\css_match.py',
+   'PYMODULE'),
+  ('soupsieve.css_types',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\soupsieve\\css_types.py',
+   'PYMODULE'),
+  ('soupsieve.util',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\soupsieve\\util.py',
+   'PYMODULE'),
+  ('soupsieve.__meta__',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\soupsieve\\__meta__.py',
+   'PYMODULE'),
+  ('bs4.dammit',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\bs4\\dammit.py',
+   'PYMODULE'),
+  ('bs4.builder',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\bs4\\builder\\__init__.py',
+   'PYMODULE'),
+  ('bs4.builder._lxml',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\bs4\\builder\\_lxml.py',
+   'PYMODULE'),
+  ('bs4.builder._html5lib',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\bs4\\builder\\_html5lib.py',
+   'PYMODULE'),
+  ('bs4.builder._htmlparser',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\bs4\\builder\\_htmlparser.py',
+   'PYMODULE'),
+  ('html.parser',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\html\\parser.py',
+   'PYMODULE'),
+  ('_markupbase',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\_markupbase.py',
+   'PYMODULE'),
+  ('psutil',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\__init__.py',
+   'PYMODULE'),
+  ('psutil._psaix',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_psaix.py',
+   'PYMODULE'),
+  ('psutil._pssunos',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_pssunos.py',
+   'PYMODULE'),
+  ('psutil._psbsd',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_psbsd.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('psutil._psosx',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_psosx.py',
+   'PYMODULE'),
+  ('psutil._pswindows',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\psutil\\_pswindows.py',
+   'PYMODULE'),
+  ('psutil._pslinux',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_pslinux.py',
+   'PYMODULE'),
+  ('psutil._psposix',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_psposix.py',
+   'PYMODULE'),
+  ('psutil._compat',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_compat.py',
+   'PYMODULE'),
+  ('psutil._common',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\psutil\\_common.py',
+   'PYMODULE'),
+  ('curses',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\curses\\__init__.py',
+   'PYMODULE'),
+  ('curses.has_key',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\curses\\has_key.py',
+   'PYMODULE'),
+  ('PyQt5',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\PyQt5\\__init__.py',
+   'PYMODULE'),
+  ('fbs_runtime.application_context.PyQt5',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\application_context\\PyQt5.py',
+   'PYMODULE'),
+  ('fbs_runtime.application_context',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\application_context\\__init__.py',
+   'PYMODULE'),
+  ('fbs_runtime.licensing',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\licensing.py',
+   'PYMODULE'),
+  ('fbs_runtime.platform',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\platform.py',
+   'PYMODULE'),
+  ('fbs_runtime.excepthook',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\excepthook\\__init__.py',
+   'PYMODULE'),
+  ('fbs_runtime._signal',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\_signal.py',
+   'PYMODULE'),
+  ('fbs_runtime._resources',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\_resources.py',
+   'PYMODULE'),
+  ('fbs_runtime._source',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\_source.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\pathlib.py',
+   'PYMODULE'),
+  ('fbs_runtime._settings',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\_settings.py',
+   'PYMODULE'),
+  ('fbs_runtime._fbs',
+   'c:\\vmsp streaming\\obs streamer\\lib\\site-packages\\fbs_runtime\\_fbs.py',
+   'PYMODULE'),
+  ('fbs_runtime._frozen',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\_frozen.py',
+   'PYMODULE'),
+  ('fbs_runtime._state',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\_state.py',
+   'PYMODULE'),
+  ('fbs_runtime',
+   'c:\\vmsp streaming\\obs '
+   'streamer\\lib\\site-packages\\fbs_runtime\\__init__.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\datetime.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\VMSP '
+   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\calendar.py',
+   'PYMODULE')])
