@@ -1,0 +1,2 @@
+"C:\Users\VMSP Church\AppData\Local\Programs\Python\Python39\python.exe"
+"C:\VMSP Streaming\FFMPEG Streamer\python\start_streaming.py" "Covenant Thursday" 7.25
