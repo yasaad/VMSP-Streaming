@@ -1,0 +1,1 @@
+"C:\Users\VMSP Church\AppData\Local\Programs\Python\Python39\python.exe" "C:\VMSP-Streaming\AutoStreamer\python\obs_autostreamer.py" "Eve of Great Friday" 4.5

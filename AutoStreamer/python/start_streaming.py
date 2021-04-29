@@ -108,7 +108,7 @@ def main(public, nile, bottom_left):
             print("3rd argument (optional) must be either True or False")
             sys.exit(2)
     print(f"Starting {'Public' if public else 'Unlisted'} stream")
-    stream_automation = StreamAutomation()
+    stream_automation = StreamAutomation(os.path.abspath("../keys"))
     service_date = date.strftime(date.today(), "%m/%d/%Y")
     service_name = args[1]
     if service_name == "Pascha":

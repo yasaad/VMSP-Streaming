@@ -20,9 +20,10 @@ class StreamAutomation:
     """
     StreamAutomation class
     """
-    def __init__(self):
+    def __init__(self, keys):
         self.OBS = None
-        with open("C:/VMSP Streaming/FFMPEG Streamer/keys/stream_key.txt") as f:
+        print("KEYS PATH:", keys)
+        with open(f"{keys}/stream_key.txt") as f:
             self.STREAM_ID = f.readline()
             
         # Create Youtube Livestream
@@ -30,31 +31,26 @@ class StreamAutomation:
 
         api_service_name = "youtube"
         api_version = "v3"
-        client_secrets_file = "C:/VMSP Streaming/FFMPEG Streamer/keys/client_secrets.json"
+        client_secrets_file = f"{keys}/client_secrets.json"
         credentials = None
         # Load credentials if authorized once
-        if os.path.exists("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle"):
-            print("Loading Credentials From File...")
-            with open("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle", "rb") as token:
+        if os.path.exists(f"{keys}/token.pickle"):
+            with open(f"{keys}/token.pickle", "rb") as token:
                 credentials = pickle.load(token)
 
         if not credentials or not credentials.valid:
             if credentials and credentials.expired and credentials.refresh_token:
-                print("Refreshing Access Token...")
                 credentials.refresh(Request())
             else:
-                print("Fetching New Token...")
                 flow = InstalledAppFlow.from_client_secrets_file(client_secrets_file, scopes)
                 credentials = flow.run_local_server(port=8080, authorization_prompt_message="Authorizing Account")
-                with open("C:/VMSP Streaming/FFMPEG Streamer/keys/token.pickle", "wb") as token:
-                    print("Saving Credentials for Future Use...")
+                with open(f"{keys}/token.pickle", "wb") as token:
                     pickle.dump(credentials, token)
         self.youtube = googleapiclient.discovery.build(
             api_service_name, api_version, credentials=credentials)
 
     def setThumbnail(self, video_id, imagePath):
         # pylint: disable=maybe-no-member
-        print("THUMBNAIL: ", imagePath)
         request = self.youtube.thumbnails().set(
             videoId=video_id,
             media_body=MediaFileUpload(imagePath)
@@ -75,7 +71,6 @@ class StreamAutomation:
     def createBroadcast(self, title: str, public=True):
         start_time = datetime.now() + timedelta(hours=5)
         start_time = start_time.isoformat() + "Z"
-        print("Starting Stream to Youtube")
 
         # pylint: disable=maybe-no-member
         request = self.youtube.liveBroadcasts().insert(
@@ -108,7 +103,6 @@ class StreamAutomation:
 
     def bindBroadcast(self, broadcast_id):
         # pylint: disable=maybe-no-member
-        print("BINDING TO STREAM:", self.STREAM_ID)
         request = self.youtube.liveBroadcasts().bind(
             id=broadcast_id,
             part="snippet",
@@ -128,40 +122,34 @@ class StreamAutomation:
 
         )
         response = request.execute()
-        for item in response['items']:
-            print(f"Livestream Status of {item['snippet']['title']}: {item['status']['streamStatus']}")
         return response
 
     def deleteBroadcast(self, broadcast_id):
         # pylint: disable=maybe-no-member
         request = self.youtube.liveBroadcasts().delete(id=broadcast_id)
         response = request.execute()
-        print(response)
         return(response)  
 
     def endBroadcast(self, broadcast_id):
         # pylint: disable=maybe-no-member
-        request = self.youtube.liveBroadcasts().transition(
-            broadcastStatus="complete",
-            id=broadcast_id,
-            part="snippet,status"
-        )
-        response = request.execute()
-        return(response)  
+        status = self.checkBroadcastStatus(broadcast_id)
+        if status != "live":
+            return self.deleteBroadcast(broadcast_id)
+        else:
+            request = self.youtube.liveBroadcasts().transition(
+                part="snippet,status",
+                broadcastStatus="complete",
+                id=broadcast_id
+            )
+            response = request.execute()
+            return(response)  
 
     def turnOnPowerSwitch(self):
         # Turn power on
-        print('Connecting to DLI powerSwitch')
         
         switch = dlipower.PowerSwitch(hostname="192.168.1.33", userid="admin", password="1234")
-        # Turn on Mixer
-        print("Turning Mixer ON")
         switch.on("Mixer")
-        # Turn on ATEM
-        print("Turning ATEM ON")
         switch.on("ATEM")
-        # Turn on Amp
-        print("Turning AMP ON")
         switch.on("Amp")
         while (switch.status("Amp") != "ON"):
             pass
@@ -169,23 +157,16 @@ class StreamAutomation:
     def turnOffPowerSwitch(self):
         switch = dlipower.PowerSwitch(hostname="192.168.1.33", userid="admin", password="1234")
 
-        print("Turning Mixer OFF")
         switch.off("Mixer")
-        # Turn on ATEM
-        print("Turning ATEM OFF")
         switch.off("ATEM")
-        # Turn on Amp
-        print("Turning AMP OFF")
         switch.off("Amp")
 
     def startOBS(self):
         if "obs64.exe" in (p.name() for p in psutil.process_iter()):
-            print("Closing any existing OBS windows")
             os.system("taskkill /im obs64.exe /T /F >nul 2>&1")
             time.sleep(1)
-        print("Opening OBS")
         OBS_DIR = os.path.abspath(os.path.expanduser(r"C:\\Program Files\\obs-studio\\bin\\64bit\\"))
-        OBS_CMD = r'obs64.exe --collection "VMSP Live Streaming" --profile "VMSP Church (autostream)" --scene "ATEM w/ Coptic Reader (Bottom Right)" --startstreaming'
+        OBS_CMD = r'obs64.exe --collection "VMSP Live Streaming" --profile "VMSP Church (autostream)" --multi --scene "ATEM w/ Coptic Reader (Bottom Left)" --startstreaming'
         self.OBS = Popen(OBS_CMD, cwd=OBS_DIR, shell=True)
 
     def stopOBS(self):
