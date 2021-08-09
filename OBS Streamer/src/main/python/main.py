@@ -3,10 +3,25 @@ import calendar
 from datetime import datetime, date
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QComboBox, QLineEdit
-from PyQt5.QtGui import QIcon, QPixmap, QMovie
-from PyQt5.QtCore import QObject, QThread, pyqtSignal, QRunnable, QThreadPool, pyqtSlot
+from PyQt5.QtGui import QIcon, QPixmap, QMovie, QPainter
+from PyQt5.QtCore import Qt, QObject, QThread, pyqtSignal, QRunnable, QThreadPool, pyqtSlot
 from streamAutomation import StreamAutomation
 
+
+class Thumbnail(QWidget):
+    def __init__(self, parent=None):
+        QWidget.__init__(self, parent=parent)
+        self.p = QPixmap()
+
+    def setPixmap(self, p):
+        self.p = p
+        self.update()
+
+    def paintEvent(self, event):
+        if not self.p.isNull():
+            painter = QPainter(self)
+            painter.setRenderHint(QPainter.SmoothPixmapTransform)
+            painter.drawPixmap(self.rect(), self.p)
 
 class LoadingButton(QPushButton):
     @pyqtSlot()
@@ -112,8 +127,7 @@ class Window(QWidget):
             'Virgin Mary Revival (Nahda)' : "Saint_Mary.jpg"
         }
         self.streaming = False
-        # self.setGeometry(500, 300, 400, 300)
-        # self.setFixedSize(500,400)
+        self.setMinimumSize(500,400)
         self.create_widgets()
         self.create_layout()
         self.setLayout(self.mainVbox)
@@ -144,7 +158,7 @@ class Window(QWidget):
         self.startStreamBtn.setGif(self.ctx.get_resource('images/loading.gif'))
         self.startStreamBtn.setStyleSheet(self.styleSheetWhite)
         self.startStreamBtn.clicked.connect(lambda: self.stop_stream() if self.streaming else self.start_stream())
-        self.thumbnail = QLabel(self)
+        self.thumbnail = Thumbnail(self)
         self.thumbnail_path = self.set_thumbnail(self.titlesDict[self.titleSelector.currentText()])
    
     def create_title(self, selection):
@@ -163,7 +177,7 @@ class Window(QWidget):
 
     def set_thumbnail(self, image_name):
         resource = self.ctx.get_resource(f'images/{image_name}')
-        self.thumbnail.setPixmap(QPixmap(resource).scaledToWidth(self.width()))
+        self.thumbnail.setPixmap(QPixmap(resource))
         return resource 
     
     def title_selector_changed(self):
