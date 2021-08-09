@@ -104,11 +104,16 @@ class Window(QWidget):
             'Bible Study': "Bible_Study.jpg",
             'Palm Sunday': "Palm_Sunday.jpg",
             'Holy Week': "Holy_Week.jpg",
+            'Coptic New Year': "Coptic_New_Year.jpg",
+            'Feast of Nativity': "Feast_of_Nativity.jpg",
+            'Feast of Resurrection': "Feast_of_Resurrection.jpg",
+            'Feast of the Cross': "Feast_of_the_Cross.jpg",
+            'Feast of Theophany': "Feast_of_Theophany.jpg",
+            'Virgin Mary Revival (Nahda)' : "Saint_Mary.jpg"
         }
         self.streaming = False
-        self.setGeometry(500, 300, 400, 300)
-        self.setFixedSize(500,400)
-        # self.setStyleSheet(self.styleSheetBlack)
+        # self.setGeometry(500, 300, 400, 300)
+        # self.setFixedSize(500,400)
         self.create_widgets()
         self.create_layout()
         self.setLayout(self.mainVbox)
@@ -150,7 +155,7 @@ class Window(QWidget):
                 day = calendar.day_name[date.today().weekday()]
                 title = f"Day of {day} Pascha"
             else:
-                # Eve of next day=]
+                # Eve of next day
                 day = calendar.day_name[date.today().weekday() + 1]
                 title = f"Eve of {day} Pascha"
             # TODO: Add custom names for Thrusday Friday Saturday and Resrrection
