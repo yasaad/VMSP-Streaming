@@ -8,6 +8,7 @@ from subprocess import Popen
 from datetime import datetime, timedelta
 import pickle
 import dlipower
+import PyATEMMax
 
 
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -159,7 +160,25 @@ class StreamAutomation:
         switch.off("Mixer")
         switch.off("ATEM")
         switch.off("Amp")
+    def startATEMStream(self):
+        switcher = PyATEMMax.ATEMMax()
+        switcher.connect("192.168.1.146")
+        if switcher.waitForConnection(infinite=False):
+            switcher.setMacroAction(switcher.atem.macros.macro5, switcher.atem.macroActions.runMacro)
+            print("Settings updated")
+        else:
+            print("ERROR: no response from switcher")
+        switcher.disconnect()
 
+    def stopATEMStream(self):
+        switcher = PyATEMMax.ATEMMax()
+        switcher.connect("192.168.1.146")
+        if switcher.waitForConnection(infinite=False):
+            switcher.setMacroAction(switcher.atem.macros.macro8, switcher.atem.macroActions.runMacro)
+            print("Settings updated")
+        else:
+            print("ERROR: no response from switcher")
+        switcher.disconnect()
     def startOBS(self):
         if "obs64.exe" in (p.name() for p in psutil.process_iter()):
             os.system("taskkill /im obs64.exe /T /F >nul 2>&1")

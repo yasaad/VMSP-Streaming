@@ -1,10 +1,11 @@
 import sys, traceback
 import calendar
+from argparse import ArgumentParser
 from datetime import datetime, date
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QComboBox, QLineEdit
+from PyQt5.QtWidgets import QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QComboBox, QLineEdit
 from PyQt5.QtGui import QIcon, QPixmap, QMovie, QPainter
-from PyQt5.QtCore import Qt, QObject, QThread, pyqtSignal, QRunnable, QThreadPool, pyqtSlot
+from PyQt5.QtCore import QObject, pyqtSignal, QRunnable, QThreadPool, pyqtSlot
 from streamAutomation import StreamAutomation
 
 
@@ -88,14 +89,14 @@ def start_stream_process(streamAutomation, title_text, visibility, thumbnail_pat
     streamAutomation.setThumbnail(broadcast_id, thumbnail_path)
     streamAutomation.bindBroadcast(broadcast_id)
     progress_callback.emit("Starting OBS")
-    streamAutomation.startOBS()
+    streamAutomation.startATEMStream()
     return broadcast_id
 
 def stop_stream_process(streamAutomation, broadcast_id, progress_callback):
     progress_callback.emit("Ending Broadcast")
     streamAutomation.endBroadcast(broadcast_id)
     progress_callback.emit("Closing OBS")
-    streamAutomation.stopOBS()
+    streamAutomation.stopATEMStream()
     progress_callback.emit("Turing off PowerSwitch")
     streamAutomation.turnOffPowerSwitch()
 
@@ -103,6 +104,10 @@ def stop_stream_process(streamAutomation, broadcast_id, progress_callback):
 class Window(QWidget):
     def __init__(self, ctx):
         super().__init__()
+        self.parser = ArgumentParser()
+        self.parser.add_argument('--title', help='Title and Thumbnail')
+        self.parser.add_argument('--duration', help='Time in hours')
+        self.args = self.parser.parse_args()
         self.ctx = ctx
         self.threadpool = QThreadPool()
         self.streamAutomation = StreamAutomation(self.ctx.get_resource("keys"))
@@ -127,7 +132,8 @@ class Window(QWidget):
             'Virgin Mary Revival (Nahda)' : "Saint_Mary.jpg"
         }
         self.streaming = False
-        self.setMinimumSize(500,400)
+        self.resize(1100,800)
+        self.setMinimumSize(550,400)
         self.create_widgets()
         self.create_layout()
         self.setLayout(self.mainVbox)
@@ -150,6 +156,10 @@ class Window(QWidget):
     def create_widgets(self):
         self.titleSelector = QComboBox()
         self.titleSelector.addItems([*self.titlesDict])
+        self.titleSelector.setCurrentIndex(1)
+        if self.args.title in self.titlesDict:
+            index = self.titleSelector.findText(self.args.title)
+            self.titleSelector.setCurrentIndex(index)
         self.titleSelector.currentIndexChanged.connect(self.title_selector_changed)
         self.title = QLineEdit(self.create_title(self.titleSelector.currentText()))
         self.visibilitySelector = QComboBox()
@@ -160,7 +170,7 @@ class Window(QWidget):
         self.startStreamBtn.clicked.connect(lambda: self.stop_stream() if self.streaming else self.start_stream())
         self.thumbnail = Thumbnail(self)
         self.thumbnail_path = self.set_thumbnail(self.titlesDict[self.titleSelector.currentText()])
-   
+
     def create_title(self, selection):
         title = selection
         if selection == "Holy Week":

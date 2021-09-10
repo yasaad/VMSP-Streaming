@@ -1,5 +1,5 @@
-('C:\\VMSP Streaming\\OBS Streamer\\target\\PyInstaller\\OBS '
- 'Streamer\\PKG-00.pkg',
+('C:\\Users\\strea\\Desktop\\VMSP-Streaming\\OBS '
+ 'Streamer\\target\\PyInstaller\\OBS Streamer\\PKG-00.pkg',
  {'BINARY': 1,
   'DATA': 1,
   'EXECUTABLE': 1,
@@ -8,55 +8,47 @@
   'PYSOURCE': 1,
   'PYZ': 0},
  [('PYZ-00.pyz',
-   'C:\\VMSP Streaming\\OBS Streamer\\target\\PyInstaller\\OBS '
-   'Streamer\\PYZ-00.pyz',
+   'C:\\Users\\strea\\Desktop\\VMSP-Streaming\\OBS '
+   'Streamer\\target\\PyInstaller\\OBS Streamer\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
-   'C:\\Users\\VMSP '
-   'Church\\AppData\\Local\\Programs\\Python\\Python36\\lib\\struct.pyo',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\struct.pyo',
    'PYMODULE'),
   ('pyimod01_os_path',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
    'PYMODULE'),
   ('pyimod02_archive',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
    'PYMODULE'),
   ('pyimod03_importers',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
    'PYSOURCE'),
   ('fbs_pyinstaller_hook',
-   'C:\\VMSP Streaming\\OBS '
+   'C:\\Users\\strea\\Desktop\\VMSP-Streaming\\OBS '
    'Streamer\\target\\PyInstaller\\fbs_pyinstaller_hook.py',
    'PYSOURCE'),
   ('pyi_rth_pkgres',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_pkgres.py',
-   'PYSOURCE'),
-  ('pyi_rth_win32comgenpy',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_win32comgenpy.py',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_pkgres.py',
    'PYSOURCE'),
   ('pyi_rth_multiprocessing',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_multiprocessing.py',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_win32comgenpy',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_win32comgenpy.py',
    'PYSOURCE'),
   ('pyi_rth_qt5',
-   'c:\\vmsp streaming\\obs '
-   'streamer\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_qt5.py',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_qt5.py',
    'PYSOURCE'),
   ('main',
-   'C:\\VMSP Streaming\\OBS Streamer\\src\\main\\python\\main.py',
+   'C:\\Users\\strea\\Desktop\\VMSP-Streaming\\OBS '
+   'Streamer\\src\\main\\python\\main.py',
    'PYSOURCE'),
   ('OBS Streamer.exe.manifest',
-   'C:\\VMSP Streaming\\OBS Streamer\\target\\PyInstaller\\OBS Streamer\\OBS '
-   'Streamer.exe.manifest',
+   'C:\\Users\\strea\\Desktop\\VMSP-Streaming\\OBS '
+   'Streamer\\target\\PyInstaller\\OBS Streamer\\OBS Streamer.exe.manifest',
    'BINARY')],
  True,
  False,
