@@ -1,19 +1,23 @@
 # VMSP-Streaming
-This is the streaming system for Virgin Mary and St. Pachomus Coptic Orthodox Church. There are two projects here. FFMPEG Streamer and OBS Streamer. The fisrt is used to fully automate streaming using the Task Scheduler and FFMPEG. The second is a helper app to start the power swithc, youtube broadcast, and obs with the right title and thumbnail as well as handel closing all of the afformentioned in an easy to use GUI.
+
+This is the streaming system for Virgin Mary and St. Pachomus Coptic Orthodox Church. There are two projects here. FFMPEG Streamer and ATEM Streamer. The fisrt is used to fully automate streaming using the Task Scheduler and FFMPEG. The second is a helper app to start the power swithc, youtube broadcast, and obs with the right title and thumbnail as well as handel closing all of the afformentioned in an easy to use GUI.
+
 ## FFMPEG Streamer
-- run ```start_streaming.py [Name of stream] [Hours to stream]``` to start a stream
+
+- run `start_streaming.py [Name of stream] [Hours to stream]` to start a stream
   - Usual Names
     - "Midnight Praises & Vespers"
     - "Divine Liturgy"
     - "Pascha"
-      - running Pascha will automatically name the stream [Morning/Evening] of [Day of the Week] according to the time the stream runs 
+      - running Pascha will automatically name the stream [Morning/Evening] of [Day of the Week] according to the time the stream runs
 
-## OBS Streamer
-- To run any fbs commands first activate the virtual environment by running ```.\Scripts\activate``` in the "OBS Streamer" Directory
+## ATEM Streamer
+
+- To run any fbs commands first activate the virtual environment by running `.\Scripts\activate` in the "ATEM Streamer" Directory
   ```
   fbs clean
   fbs run
   fbs freeze (optionally --debug)
   fbs installer
   ```
-- Installer is located at [OBS StreamerSetup.exe](OBS%20Streamer/target/OBS%20StreamerSetup.exe)
+- Installer is located at [ATEM StreamerSetup.exe](OBS%20Streamer/target/OBS%20StreamerSetup.exe)
