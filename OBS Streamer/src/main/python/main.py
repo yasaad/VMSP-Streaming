@@ -88,14 +88,14 @@ def start_stream_process(streamAutomation, title_text, visibility, thumbnail_pat
     broadcast_id = streamAutomation.createBroadcast(title_text, visibility == "Public")
     streamAutomation.setThumbnail(broadcast_id, thumbnail_path)
     streamAutomation.bindBroadcast(broadcast_id)
-    progress_callback.emit("Starting OBS")
+    progress_callback.emit("Starting ATEM Stream")
     streamAutomation.startATEMStream()
     return broadcast_id
 
 def stop_stream_process(streamAutomation, broadcast_id, progress_callback):
     progress_callback.emit("Ending Broadcast")
     streamAutomation.endBroadcast(broadcast_id)
-    progress_callback.emit("Closing OBS")
+    progress_callback.emit("Stoping ATEM Stream")
     streamAutomation.stopATEMStream()
     progress_callback.emit("Turing off PowerSwitch")
     streamAutomation.turnOffPowerSwitch()
