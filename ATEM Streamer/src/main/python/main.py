@@ -89,8 +89,17 @@ def start_stream_process(streamAutomation, title_text, visibility, thumbnail_pat
     broadcast_id = streamAutomation.createBroadcast(title_text, visibility == "Public")
     streamAutomation.setThumbnail(broadcast_id, thumbnail_path)
     streamAutomation.bindBroadcast(broadcast_id)
-    progress_callback.emit("Starting ATEM Stream")
-    streamAutomation.startATEMStream()
+    broadcastStatus = streamAutomation.checkBroadcastStatus(broadcast_id)
+    while "live" not in broadcastStatus:
+        progress_callback.emit(f"Broadcast is: {broadcastStatus}")
+        streamAutomation.stopATEMStream()
+        time.sleep(1)
+        streamAutomation.startATEMStream()
+        time.sleep(5)
+        broadcastStatus = streamAutomation.checkBroadcastStatus(broadcast_id)
+    progress_callback.emit(f"Broadcast is: {broadcastStatus}")
+    print("Stream is active")
+    time.sleep(3)
     return broadcast_id
 
 def stop_stream_process(streamAutomation, broadcast_id, progress_callback):
@@ -139,6 +148,10 @@ class Window(QWidget):
         self.create_widgets()
         self.create_layout()
         self.setLayout(self.mainVbox)
+
+    def closeEvent(self, event):
+        self.streamAutomation.closeATEMConnection()
+        event.accept()
  
     def create_layout(self):
         self.mainVbox = QVBoxLayout()
@@ -158,7 +171,7 @@ class Window(QWidget):
     def create_widgets(self):
         self.titleSelector = QComboBox()
         self.titleSelector.addItems([*self.titlesDict])
-        self.titleSelector.setCurrentIndex(1)
+        self.titleSelector.setCurrentIndex(0)
         if self.args.title in self.titlesDict:
             index = self.titleSelector.findText(self.args.title)
             self.titleSelector.setCurrentIndex(index)

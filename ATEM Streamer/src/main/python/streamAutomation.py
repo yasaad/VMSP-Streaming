@@ -24,6 +24,7 @@ class StreamAutomation:
     def __init__(self, keys):
         self.OBS = None
         self.switcher = PyATEMMax.ATEMMax()
+        self.switcher.connect("192.168.1.146")
         with open(f"{keys}/stream_key.txt") as f:
             self.STREAM_ID = f.readline()
             
@@ -163,7 +164,6 @@ class StreamAutomation:
         switch.off("Amp")
     
     def startATEMStream(self):
-        self.switcher.connect("192.168.1.146")
         if self.switcher.waitForConnection(infinite=False):
             self.switcher.setMacroAction(self.switcher.atem.macros.macro8, self.switcher.atem.macroActions.runMacro)
             print("Started ATEM Stream")
@@ -173,11 +173,13 @@ class StreamAutomation:
     def stopATEMStream(self):
         if self.switcher.waitForConnection(infinite=False):
             self.switcher.setMacroAction(self.switcher.atem.macros.macro5, self.switcher.atem.macroActions.runMacro)
-            self.switcher.disconnect()
             print("Stopped ATEM Stream")
         else:
             print("ERROR: no response from switcher")
-        
+
+    def closeATEMConnection(self):
+        print("Closing ATEM Connection")
+        self.switcher.disconnect() 
     
     def startOBS(self):
         if "obs64.exe" in (p.name() for p in psutil.process_iter()):
