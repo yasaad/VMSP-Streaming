@@ -1,0 +1,35 @@
+Log Name: Microsoft-Windows-TaskScheduler/Operational
+Source: Microsoft-Windows-TaskScheduler
+Date: 9/23/2021 5:05:34 PM
+Event ID: 102
+Task Category: Task completed
+Level: Information
+Keywords: (1)
+User: SYSTEM
+Computer: alpha
+Description:
+Task Scheduler successfully finished "{d7c62cfd-840d-4085-a245-1438bb81a2f6}" instance of the "\Streaming\AutoLogin" task for user "ALPHA\strea".
+Event Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<System>
+<Provider Name="Microsoft-Windows-TaskScheduler" Guid="{de7b24ea-73c8-4a09-985d-5bdadcfa9017}" />
+<EventID>102</EventID>
+<Version>0</Version>
+<Level>4</Level>
+<Task>102</Task>
+<Opcode>2</Opcode>
+<Keywords>0x8000000000000001</Keywords>
+<TimeCreated SystemTime="2021-09-23T21:05:34.0541829Z" />
+<EventRecordID>17</EventRecordID>
+<Correlation ActivityID="{d7c62cfd-840d-4085-a245-1438bb81a2f6}" />
+<Execution ProcessID="2312" ThreadID="14640" />
+<Channel>Microsoft-Windows-TaskScheduler/Operational</Channel>
+<Computer>alpha</Computer>
+<Security UserID="S-1-5-18" />
+</System>
+<EventData Name="TaskSuccessEvent">
+<Data Name="TaskName">\Streaming\AutoLogin</Data>
+<Data Name="UserContext">ALPHA\strea</Data>
+<Data Name="InstanceId">{d7c62cfd-840d-4085-a245-1438bb81a2f6}</Data>
+</EventData>
+</Event>
