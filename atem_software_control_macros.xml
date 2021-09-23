@@ -43,7 +43,7 @@
             <Op id="StreamRTMP" start="False"/>
         </Macro>
         <Macro index="5" name="Setup Mics" description="Changes gain and volume for mics input">
-            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-50"/>
+            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-45"/>
             <Op id="FairlightAudioMixerInputSourceFaderGain" input="ExternalMic" sourceId="18446744073709486336" gain="0"/>
             <Op id="FairlightAudioMixerInputSourcePan" input="ExternalMic" sourceId="18446744073709486336" pan="0"/>
             <Op id="FairlightAudioMixerInputSourceMixType" input="ExternalMic" sourceId="18446744073709486336" mixType="On"/>
@@ -58,7 +58,7 @@
             <Op id="ProgramInput" mixEffectBlockIndex="0" input="Camera2"/>
             <Op id="PreviewInput" mixEffectBlockIndex="0" input="Camera1"/>
             <!-- Mics -->
-            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-50"/>
+            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-45"/>
             <Op id="FairlightAudioMixerInputSourceFaderGain" input="ExternalMic" sourceId="18446744073709486336" gain="0"/>
             <Op id="FairlightAudioMixerInputSourcePan" input="ExternalMic" sourceId="18446744073709486336" pan="0"/>
             <Op id="FairlightAudioMixerInputSourceMixType" input="ExternalMic" sourceId="18446744073709486336" mixType="On"/>
