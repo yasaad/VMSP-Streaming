@@ -203,8 +203,8 @@ class Window(QWidget):
         # Set duration
         self.remaining_time = -1
         self.timer_label = QLabel()
-        if self.args.duration and float(self.args.duration) > 0:
-            self.remaining_time = float(self.args.duration)
+        if self.args.duration and self.args.duration > 0:
+            self.remaining_time = self.args.duration * 3600
             self.update_timer()
         else:
             self.timer_label.setText("No timer set")
@@ -298,7 +298,7 @@ class Window(QWidget):
         remaining = self.remaining_time % 3600
         minutes = remaining // 60
         seconds = remaining % 60
-        self.timer_label.setText(f"Time Remaining: {hours}:{minutes:02d}:{seconds:02d}")
+        self.timer_label.setText("Time Remaining: " + str(int(hours)) + ":" + str(int(minutes)).zfill(2) + ":" + str(int(seconds)).zfill(2))
         self.timer_label.adjustSize()
     
     def start_stream(self):
