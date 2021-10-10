@@ -60,6 +60,18 @@ class StreamAutomation:
         response = request.execute()
         return response
 
+    def checkForCurrentLiveStream(self):
+        request = self.youtube.liveBroadcasts().list(
+            part="id",
+            broadcastStatus="active",
+            broadcastType="all"
+        )
+        response = request.execute()
+        items = response["items"]
+        if len(items) > 0:
+            return(response["items"][0]["id"])
+        return None
+    
     def checkBroadcastStatus(self, broadcast_id):
         # pylint: disable=maybe-no-member
         request = self.youtube.liveBroadcasts().list(
@@ -69,6 +81,7 @@ class StreamAutomation:
         )
         response = request.execute()
         return(response["items"][0]["status"]["lifeCycleStatus"])
+        
 
     def createBroadcast(self, title: str, public=True):
         start_time = datetime.now() + timedelta(hours=5)

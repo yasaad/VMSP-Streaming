@@ -44,6 +44,9 @@
   ('pyi_rth_multiprocessing',
    'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
+  ('pyi_rth_qt5webengine',
+   'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_qt5webengine.py',
+   'PYSOURCE'),
   ('pyi_rth_qt5',
    'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_qt5.py',
    'PYSOURCE'),
@@ -58,7 +61,7 @@
  [],
  False,
  False,
- 1633822466,
+ 1633830108,
  [('runw.exe',
    'c:\\users\\strea\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\runw.exe',
    'EXECUTABLE')])

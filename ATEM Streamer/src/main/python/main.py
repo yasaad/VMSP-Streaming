@@ -6,7 +6,9 @@ from datetime import datetime, date
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
 from PyQt5.QtWidgets import QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QComboBox, QLineEdit, QSizePolicy
 from PyQt5.QtGui import QIcon, QPixmap, QMovie, QPainter, QFont
-from PyQt5.QtCore import QObject, pyqtSignal, QRunnable, QThreadPool, pyqtSlot, QTimer, Qt
+from PyQt5.QtCore import QObject, pyqtSignal, QRunnable, QThreadPool, pyqtSlot, QTimer, QUrl
+from PyQt5 import QtWebEngineWidgets
+from PyQt5 import QtWebEngineCore
 from streamAutomation import StreamAutomation
 
 
@@ -103,6 +105,7 @@ def start_stream_process(streamAutomation, title_text, visibility, thumbnail_pat
     return broadcast_id
 
 def stop_stream_process(streamAutomation, broadcast_id, progress_callback):
+    print(f"This is the broadcast_id to end the stream: {broadcast_id}")
     progress_callback.emit("Ending Broadcast")
     streamAutomation.endBroadcast(broadcast_id)
     progress_callback.emit("Stoping ATEM Stream")
@@ -136,9 +139,12 @@ class Window(QWidget):
         self.threadpool = QThreadPool()
         self.streamAutomation = StreamAutomation(self.ctx.get_resource("keys"))
         self.thumbnail_path = None
-        self.broadcast_id = None
+        self.broadcast_id = self.streamAutomation.checkForCurrentLiveStream()
         self.font= QFont("Arial", 16)
+        self.styleSheetRefresh = ('background-color:white; padding:8px')
         self.styleSheetWhite = ('background-color:white; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
+        self.styleSheetGreen = ('background-color:green; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
+        self.styleSheetRed = ('background-color:red; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
         #maps title to image
         self.titlesDict = {
             'Divine Liturgy':'Divine_Liturgy.jpg',
@@ -153,7 +159,8 @@ class Window(QWidget):
             'Feast of Theophany': "Feast_of_Theophany.jpg",
             'Virgin Mary Revival (Nahda)' : "Saint_Mary.jpg"
         }
-        self.streaming = False
+        self.streaming = True if self.broadcast_id is not None else False
+        print(self.broadcast_id)
         self.resize(1100,800)
         self.setMinimumSize(550,400)
         self.create_widgets()
@@ -176,11 +183,13 @@ class Window(QWidget):
         footer = QHBoxLayout()
         footer.addWidget(self.visibilitySelector)
         footer.addWidget(self.startStreamBtn)
+        footer.addWidget(self.refreshStatusBtn)
         timerLayout = QHBoxLayout()
         timerLayout.addWidget(self.resetBtn)
         timerLayout.addWidget(self.timer_label)
         self.mainVbox.addLayout(header)
         self.mainVbox.addWidget(self.thumbnail)
+        # self.mainVbox.addWidget(self.webview)
         self.mainVbox.addLayout(titleLayout)
         self.mainVbox.addLayout(footer)
         self.mainVbox.addLayout(timerLayout)
@@ -216,12 +225,17 @@ class Window(QWidget):
         self.visibilitySelector.addItems(["Public", "Unlisted"])
         self.visibilitySelector.setFont(self.font)
         if self.args.unlisted:
-            self.visibilitySelector.setCurrentIndex(1)
-        self.startStreamBtn = LoadingButton("Start Stream")
+            self.visibilitySelector.setCurrentIndex(1) 
+        self.startStreamBtn = LoadingButton("Stop Stream") if self.streaming else LoadingButton("Start Stream")
         self.startStreamBtn.setFont(self.font)
         self.startStreamBtn.setGif(self.ctx.get_resource('images/loading.gif'))
-        self.startStreamBtn.setStyleSheet(self.styleSheetWhite)
+        self.startStreamBtn.setStyleSheet(self.styleSheetRed if self.streaming else self.styleSheetGreen)
         self.startStreamBtn.clicked.connect(lambda: self.stop_stream() if self.streaming else self.start_stream())
+        self.refreshStatusBtn = LoadingButton()
+        self.refreshStatusBtn.setIcon(QIcon(self.ctx.get_resource('images/refresh.png')))
+        self.refreshStatusBtn.clicked.connect(self.refresh_status)
+        self.refreshStatusBtn.setStyleSheet(self.styleSheetRefresh)
+        self.refreshStatusBtn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
         self.resetBtn = QPushButton("Reset Timer")
         self.resetBtn.setFont(self.font)
         self.resetBtn.clicked.connect(self.reset_clicked)
@@ -231,6 +245,11 @@ class Window(QWidget):
         self.thumbnail_path = self.set_thumbnail(self.titlesDict[self.titleSelector.currentText()])
         self.timer = QTimer()
         self.timer.timeout.connect(self.timer_interval)
+        # self.webview=QtWebEngineWidgets.QWebEngineView()
+        # self.webview.settings().setAttribute(QtWebEngineWidgets.QWebEngineSettings.LocalContentCanAccessRemoteUrls, True)
+        # self.webview.settings().setAttribute(QtWebEngineWidgets.QWebEngineSettings.AllowRunningInsecureContent, True)
+        # self.webview.setUrl(QUrl("https://www.youtube.com/embed/c2VD8q5hYIE?autoplay=1&livemonitor=1"))
+        # self.webview.setUrl(QUrl("https://youtu.be/c2VD8q5hYIE"))
         
         if self.args.autostart:
             self.start_stream()
@@ -268,10 +287,24 @@ class Window(QWidget):
         self.broadcast_id = s
 
     def thread_complete(self):
+        if self.streaming and self.remaining_time > 0:
+            self.timer.start(1000)
+            self.resetBtn.setText('Cancel Timer')
+        else:
+            broadcast_id = None
         self.startStreamBtn.stop()
-        
-        self.startStreamBtn.setText("Stop Stream" if self.streaming else "Start Stream")
+        self.update_stream_button_status()
         self.startStreamBtn.setDisabled(False)
+        
+    def refresh_status(self):
+        self.broadcast_id = self.streamAutomation.checkForCurrentLiveStream()
+        if self.broadcast_id is not None:
+            self.streaming = True
+            self.update_stream_button_status()
+            
+    def update_stream_button_status(self):
+        self.startStreamBtn.setText("Stop Stream" if self.streaming else "Start Stream")
+        self.startStreamBtn.setStyleSheet(self.styleSheetRed if self.streaming else self.styleSheetGreen)
     
     def reset_clicked(self):
         if self.timer.isActive():
@@ -293,7 +326,6 @@ class Window(QWidget):
         self.update_timer()
         
     def update_timer(self):
-        
         hours = self.remaining_time // 3600
         remaining = self.remaining_time % 3600
         minutes = remaining // 60
@@ -303,9 +335,6 @@ class Window(QWidget):
     
     def start_stream(self):
         self.streaming = True
-        if self.remaining_time > 0:
-            self.timer.start(1000)
-            self.resetBtn.setText('Cancel Timer')
         self.startStreamBtn.setDisabled(True)
         self.startStreamBtn.start()
         worker = Worker(start_stream_process, self.streamAutomation, self.title.text(), self.visibilitySelector.currentText(), self.thumbnail_path)
