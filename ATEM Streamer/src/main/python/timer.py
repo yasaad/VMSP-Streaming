@@ -8,9 +8,8 @@ from PyQt5.QtCore import QTimer, Qt
 from PyQt5.QtGui import QIntValidator
 
 class TimeSpinner(QWidget):
-    def __init__(self, title, min, max, connected_function=None, step=1, value=0, font=None, *args, **kwargs):
+    def __init__(self, title, min, max, connected_function=None, step=1, value=0, *args, **kwargs):
         super(TimeSpinner, self).__init__(*args, **kwargs)
-        self.setFont(font)
         self.min = min
         self.max = max
         self.step = step
@@ -72,7 +71,7 @@ NO_TIMER = "No Timer Set"
 START_TIMER  = "Start Timer"
 
 class Timer(QWidget):
-    def __init__(self, stop_stream_callback, showTimerButton, font, styleSheet, *args, **kwargs):
+    def __init__(self, stop_stream_callback, showTimerButton, *args, **kwargs):
         super(Timer, self).__init__(*args, **kwargs)
         # self.setFixedHeight(50)
         self.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
@@ -82,22 +81,19 @@ class Timer(QWidget):
         self.remaining_time = 0
         self.running = False
         self.timer_button = QPushButton(START_TIMER)
-        self.timer_button.setFont(font)
         self.timer_button.clicked.connect(lambda: self.stop() if self.running else self.start())
         self.timer_button.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
-        self.timer_button.setStyleSheet(styleSheet)
         if not showTimerButton:
             self.timer_button.hide()
         
         self.timer_label = QLabel(NO_TIMER)
         self.timer_label.setAlignment(Qt.AlignCenter)
-        self.timer_label.setFont(font)
         self.timer_label.setFixedWidth(150)
         self.timer_label.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
         self.timer_label.adjustSize()
         
-        self.hourSelector = TimeSpinner("Hours", 0, 23, connected_function=self.__timer_hours_minutes_changed, font=font)
-        self.minuteSelector = TimeSpinner("Minutes", 0, 59, connected_function=self.__timer_hours_minutes_changed, font=font)
+        self.hourSelector = TimeSpinner("Hours", 0, 23, connected_function=self.__timer_hours_minutes_changed)
+        self.minuteSelector = TimeSpinner("Minutes", 0, 59, connected_function=self.__timer_hours_minutes_changed)
             
         layout = QHBoxLayout()
         layout.setContentsMargins(0, 0, 0, 0)

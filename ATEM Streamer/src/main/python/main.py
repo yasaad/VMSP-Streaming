@@ -1,4 +1,5 @@
 import sys, traceback
+from os.path import basename
 import time
 import calendar
 from argparse import ArgumentParser
@@ -12,8 +13,9 @@ from PyQt5.QtWidgets import (QWidget,
                              QHBoxLayout,
                              QComboBox,
                              QLineEdit,
+                             QFileDialog,
                              QSizePolicy)
-from PyQt5.QtGui import QIcon, QPixmap, QMovie, QPainter, QFont, QPalette
+from PyQt5.QtGui import QIcon, QPixmap, QMovie, QFont, QPalette
 from PyQt5.QtCore import QObject, pyqtSignal, QRunnable, QThreadPool, pyqtSlot, Qt
 from streamAutomation import StreamAutomation
 
@@ -142,11 +144,12 @@ class Window(QWidget):
         self.streamAutomation = StreamAutomation(self.ctx.get_resource("keys"))
         self.thumbnail_path = None
         self.broadcast_id = self.streamAutomation.checkForCurrentLiveStream()
-        self.font= QFont("Arial", 16)
+        self.fornt = QFont("Arial", 16)
+        self.setFont(QFont("Arial", 16))
         self.styleSheetRefresh = ('background-color:white; padding:8px')
-        self.styleSheetWhite = ('background-color:white; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
-        self.styleSheetGreen = ('background-color:green; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
-        self.styleSheetRed = ('background-color:red; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
+        self.styleSheetWhite = ('font-family: Arial; font-size: 16pt; background-color:white; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
+        self.styleSheetGreen = ('font-family: Arial; font-size: 16pt; background-color:green; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
+        self.styleSheetRed = ('font-family: Arial; font-size: 16pt; background-color:red; padding-top: 3px; padding-bottom: 3px; padding-left: auto; padding-right: auto;')
         #maps title to image
         self.titlesDict = {
             'Divine Liturgy':'Divine_Liturgy.jpg',
@@ -163,7 +166,7 @@ class Window(QWidget):
         }
         self.streaming = True if self.broadcast_id is not None else False
         print(self.broadcast_id)
-        self.timer = Timer(self.stop_stream, self.streaming, self.font, self.styleSheetWhite)
+        self.timer = Timer(self.stop_stream, self.streaming)
         height = 800
         width = 1100
         scale_factor = 0.65
@@ -181,9 +184,9 @@ class Window(QWidget):
         self.mainVbox = QVBoxLayout()
         header = QHBoxLayout()
         header.addWidget(self.titleSelector)
+        header.addWidget(self.openFile)
         titleLayout = QHBoxLayout()
         video_title = QLabel("Video Title:")
-        video_title.setFont(self.font)
         
         titleLayout.addWidget(video_title)
         titleLayout.addWidget(self.title)
@@ -204,10 +207,13 @@ class Window(QWidget):
 
     def create_widgets(self):
         self.titleSelector = QComboBox()
-        self.titleSelector.setFont(self.font)
         self.titleSelector.addItems([*self.titlesDict])
         self.titleSelector.setCurrentIndex(0)
         self.titleSelector.currentIndexChanged.connect(self.title_selector_changed)
+        
+        self.openFile = QPushButton("Open Image")
+        self.openFile.clicked.connect(self.openFileClicked)
+        
         # Set Title Selector if argument given
         self.title = QLineEdit()
         if self.args.image in self.titlesDict:
@@ -222,7 +228,6 @@ class Window(QWidget):
         else:
             self.title.setText(self.create_title(self.titleSelector.currentText()))
             
-        self.title.setFont(self.font)
         
         # Set duration
         if self.args.duration and self.args.duration > 0:
@@ -231,12 +236,10 @@ class Window(QWidget):
     
         self.visibilitySelector = QComboBox()
         self.visibilitySelector.addItems(["Public", "Unlisted"])
-        self.visibilitySelector.setFont(self.font)
         self.visibilitySelector.setFixedWidth(150)
         if self.args.unlisted:
             self.visibilitySelector.setCurrentIndex(1) 
         self.startStreamBtn = LoadingButton("Stop Stream") if self.streaming else LoadingButton("Start Stream")
-        self.startStreamBtn.setFont(self.font)
         self.startStreamBtn.setGif(self.ctx.get_resource('images/loading.gif'))
         self.startStreamBtn.setStyleSheet(self.styleSheetRed if self.streaming else self.styleSheetGreen)
         self.startStreamBtn.clicked.connect(lambda: self.stop_stream() if self.streaming else self.start_stream())
@@ -261,6 +264,14 @@ class Window(QWidget):
         if self.args.autostart:
             self.start_stream()
 
+    def openFileClicked(self):
+        filename = QFileDialog.getOpenFileName(self, "Open File", "C:\\Users\\strea\\Pictures\\Thumbnails", "Image Files (*.png *jpg *jpeg)")
+        print(filename)
+        if filename[0]:
+            self.thumbnail_path = filename[0]
+            self.thumbnail.setPixmap(QPixmap(self.thumbnail_path))
+            self.title.setText(self.create_title(basename(self.thumbnail_path.split('.')[0])))
+        
     def create_title(self, selection):
         title = selection
         if selection == "Holy Week":
