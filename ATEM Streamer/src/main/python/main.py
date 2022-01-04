@@ -4,28 +4,18 @@ import calendar
 from argparse import ArgumentParser
 from datetime import datetime, date
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
-from PyQt5.QtWidgets import QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QComboBox, QLineEdit, QSizePolicy
-from PyQt5.QtGui import QIcon, QPixmap, QMovie, QPainter, QFont
-from PyQt5.QtCore import QObject, pyqtSignal, QRunnable, QThreadPool, pyqtSlot, QTimer, QUrl
-from PyQt5 import QtWebEngineWidgets
-from PyQt5 import QtWebEngineCore
+from timer import Timer
+from PyQt5.QtWidgets import (QWidget,
+                             QPushButton,
+                             QLabel,
+                             QVBoxLayout,
+                             QHBoxLayout,
+                             QComboBox,
+                             QLineEdit,
+                             QSizePolicy)
+from PyQt5.QtGui import QIcon, QPixmap, QMovie, QPainter, QFont, QPalette
+from PyQt5.QtCore import QObject, pyqtSignal, QRunnable, QThreadPool, pyqtSlot, Qt
 from streamAutomation import StreamAutomation
-
-
-class Thumbnail(QWidget):
-    def __init__(self, parent=None):
-        QWidget.__init__(self, parent=parent)
-        self.p = QPixmap()
-
-    def setPixmap(self, p):
-        self.p = p
-        self.update()
-
-    def paintEvent(self, event):
-        if not self.p.isNull():
-            painter = QPainter(self)
-            painter.setRenderHint(QPainter.SmoothPixmapTransform)
-            painter.drawPixmap(self.rect(), self.p)
 
 class LoadingButton(QPushButton):
     @pyqtSlot()
@@ -131,6 +121,18 @@ class Window(QWidget):
                                                         Feast of the Cross
                                                         Feast of Theophany
                                                         Virgin Mary Revival''')
+        self.parser.add_argument('-i', '--image', type=str, help='''Thumbnail options:
+                                                        Divine Liturgy
+                                                        Vespers & Midnight Praises
+                                                        Bible Study
+                                                        Palm Sunday
+                                                        Holy Week
+                                                        Coptic New Year
+                                                        Feast of Nativity
+                                                        Feast of Resurrection
+                                                        Feast of the Cross
+                                                        Feast of Theophany
+                                                        Virgin Mary Revival''')
         self.parser.add_argument('-d', '--duration', type=float, help='Time in hours')
         self.parser.add_argument('-u', '--unlisted', help='Use to make stream unlisted', action='store_true')
         self.parser.add_argument('-a', '--autostart', help='Use to autostart stream', action='store_true')
@@ -161,8 +163,12 @@ class Window(QWidget):
         }
         self.streaming = True if self.broadcast_id is not None else False
         print(self.broadcast_id)
-        self.resize(1100,800)
-        self.setMinimumSize(550,400)
+        self.timer = Timer(self.stop_stream, self.streaming, self.font, self.styleSheetWhite)
+        height = 800
+        width = 1100
+        scale_factor = 0.65
+        self.resize(width,height)
+        self.setMinimumSize(width * scale_factor, height * scale_factor)
         self.create_widgets()
         self.create_layout()
         self.setLayout(self.mainVbox)
@@ -178,52 +184,55 @@ class Window(QWidget):
         titleLayout = QHBoxLayout()
         video_title = QLabel("Video Title:")
         video_title.setFont(self.font)
+        
         titleLayout.addWidget(video_title)
         titleLayout.addWidget(self.title)
+        
         footer = QHBoxLayout()
         footer.addWidget(self.visibilitySelector)
         footer.addWidget(self.startStreamBtn)
         footer.addWidget(self.refreshStatusBtn)
-        timerLayout = QHBoxLayout()
-        timerLayout.addWidget(self.resetBtn)
-        timerLayout.addWidget(self.timer_label)
+        
+  
         self.mainVbox.addLayout(header)
+        
         self.mainVbox.addWidget(self.thumbnail)
-        # self.mainVbox.addWidget(self.webview)
+        # self.mainVbox.addStretch(1)
         self.mainVbox.addLayout(titleLayout)
+        self.mainVbox.addWidget(self.timer)
         self.mainVbox.addLayout(footer)
-        self.mainVbox.addLayout(timerLayout)
 
     def create_widgets(self):
         self.titleSelector = QComboBox()
         self.titleSelector.setFont(self.font)
         self.titleSelector.addItems([*self.titlesDict])
         self.titleSelector.setCurrentIndex(0)
+        self.titleSelector.currentIndexChanged.connect(self.title_selector_changed)
         # Set Title Selector if argument given
-        if self.args.title in self.titlesDict:
+        self.title = QLineEdit()
+        if self.args.image in self.titlesDict:
             index = self.titleSelector.findText(self.args.title)
             self.titleSelector.setCurrentIndex(index)
+        elif self.args.title in self.titlesDict:
+            index = self.titleSelector.findText(self.args.title)
+            self.titleSelector.setCurrentIndex(index)
+            self.title.setText(self.create_title(self.titleSelector.currentText()))
+        elif self.args.title:
+            self.title.setText(self.args.title)
+        else:
+            self.title.setText(self.create_title(self.titleSelector.currentText()))
             
-            
-        self.titleSelector.currentIndexChanged.connect(self.title_selector_changed)
-        self.title = QLineEdit(self.create_title(self.titleSelector.currentText()))
         self.title.setFont(self.font)
         
         # Set duration
-        self.remaining_time = -1
-        self.timer_label = QLabel()
         if self.args.duration and self.args.duration > 0:
-            self.remaining_time = self.args.duration * 3600
-            self.update_timer()
-        else:
-            self.timer_label.setText("No timer set")
-        self.timer_label.setFont(self.font)
-        # self.timer_label.setAlignment(Qt.AlignCenter)
-        self.timer_label.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
-        self.timer_label.adjustSize()
+            self.timer.setTime(self.args.duration * 3600)
+            self.timer.start()
+    
         self.visibilitySelector = QComboBox()
         self.visibilitySelector.addItems(["Public", "Unlisted"])
         self.visibilitySelector.setFont(self.font)
+        self.visibilitySelector.setFixedWidth(150)
         if self.args.unlisted:
             self.visibilitySelector.setCurrentIndex(1) 
         self.startStreamBtn = LoadingButton("Stop Stream") if self.streaming else LoadingButton("Start Stream")
@@ -236,15 +245,13 @@ class Window(QWidget):
         self.refreshStatusBtn.clicked.connect(self.refresh_status)
         self.refreshStatusBtn.setStyleSheet(self.styleSheetRefresh)
         self.refreshStatusBtn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
-        self.resetBtn = QPushButton("Reset Timer")
-        self.resetBtn.setFont(self.font)
-        self.resetBtn.clicked.connect(self.reset_clicked)
-        self.resetBtn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
-        self.resetBtn.setStyleSheet(self.styleSheetWhite)
-        self.thumbnail = Thumbnail(self)
+        # self.thumbnail = Thumbnail(self)
+        self.thumbnail = QLabel()
+        self.thumbnail.setBackgroundRole(QPalette.Base)
+        self.thumbnail.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        self.thumbnail.setScaledContents(True)
         self.thumbnail_path = self.set_thumbnail(self.titlesDict[self.titleSelector.currentText()])
-        self.timer = QTimer()
-        self.timer.timeout.connect(self.timer_interval)
+
         # self.webview=QtWebEngineWidgets.QWebEngineView()
         # self.webview.settings().setAttribute(QtWebEngineWidgets.QWebEngineSettings.LocalContentCanAccessRemoteUrls, True)
         # self.webview.settings().setAttribute(QtWebEngineWidgets.QWebEngineSettings.AllowRunningInsecureContent, True)
@@ -253,9 +260,6 @@ class Window(QWidget):
         
         if self.args.autostart:
             self.start_stream()
-  
-
-            
 
     def create_title(self, selection):
         title = selection
@@ -287,11 +291,10 @@ class Window(QWidget):
         self.broadcast_id = s
 
     def thread_complete(self):
-        if self.streaming and self.remaining_time > 0:
-            self.timer.start(1000)
-            self.resetBtn.setText('Cancel Timer')
+        if self.streaming and self.timer.getTime() > 0:
+            self.timer.start()
         else:
-            broadcast_id = None
+            self.broadcast_id = None
         self.startStreamBtn.stop()
         self.update_stream_button_status()
         self.startStreamBtn.setDisabled(False)
@@ -306,32 +309,8 @@ class Window(QWidget):
         self.startStreamBtn.setText("Stop Stream" if self.streaming else "Start Stream")
         self.startStreamBtn.setStyleSheet(self.styleSheetRed if self.streaming else self.styleSheetGreen)
     
-    def reset_clicked(self):
-        if self.timer.isActive():
-            self.timer.stop()
-            self.timer_label.setText("Timer Canceled")
-            self.resetBtn.setText("Reset Timer")
-            return
-        self.remaining_time = 2 * 3600
-        self.update_timer()
-        
-        
-    def timer_interval(self):
-        if self.remaining_time == 0:
-            self.timer.stop()
-            self.stop_stream()
-            self.timer_label.setText("AutoStop Timer: Stream Completed")
-            return
-        self.remaining_time -= 1
-        self.update_timer()
-        
-    def update_timer(self):
-        hours = self.remaining_time // 3600
-        remaining = self.remaining_time % 3600
-        minutes = remaining // 60
-        seconds = remaining % 60
-        self.timer_label.setText("Time Remaining: " + str(int(hours)) + ":" + str(int(minutes)).zfill(2) + ":" + str(int(seconds)).zfill(2))
-        self.timer_label.adjustSize()
+    def is_straming(self):
+        return self.streaming
     
     def start_stream(self):
         self.streaming = True
@@ -345,9 +324,7 @@ class Window(QWidget):
 
     def stop_stream(self):
         self.streaming = False
-        if self.timer.isActive():
-            self.timer.stop()
-            self.resetBtn.setText('Reset Timer')
+        self.timer.stop()
         self.startStreamBtn.setDisabled(True)
         self.startStreamBtn.start()
         worker = Worker(stop_stream_process, self.streamAutomation, self.broadcast_id)

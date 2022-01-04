@@ -169,6 +169,10 @@ class StreamAutomation:
         while (switch.status("Amp") != "ON"):
             pass
 
+    def cyclePower(self, outletName):
+        switch = dlipower.PowerSwitch(hostname="192.168.1.33", userid="admin", password="1234")
+        switch.cycle(outletName)
+        
     def turnOffPowerSwitch(self):
         switch = dlipower.PowerSwitch(hostname="192.168.1.33", userid="admin", password="1234")
 
@@ -182,6 +186,8 @@ class StreamAutomation:
             print("Started ATEM Stream")
         else:
             print("ERROR: no response from switcher")
+            self.cyclePower("ATEM")
+            
 
     def stopATEMStream(self):
         if self.switcher.waitForConnection(infinite=False):
