@@ -21,3 +21,27 @@ This is the streaming system for Virgin Mary and St. Pachomus Coptic Orthodox Ch
   fbs installer
   ```
 - Installer is located at [ATEM StreamerSetup.exe](OBS%20Streamer/target/OBS%20StreamerSetup.exe)
+
+- To run ATEM streamer from the command line use the following
+```
+"C:\Program Files (x86)\ATEM Streamer\ATEM Streamer.exe" 
+```
+with the following options
+```
+'-t', '--title' type=str Setting this will set the title, if it is also the name of a thumbnail it will set the thumbnail as well (thumbnail names listed below)
+'-i', '--image' type=str Setting this will allow you to pick a default thumbnail even if your title is not the name of one of the thumbnails
+Thumbnail Options: Divine Liturgy
+                   Vespers & Midnight Praises
+                   Bible Study
+                   Palm Sunday
+                   Holy Week
+                   Coptic New Year
+                   Feast of Nativity
+                   Feast of Resurrection
+                   Feast of the Cross
+                   Feast of Theophany
+                   Virgin Mary Revival
+'-d', '--duration', type=float Auto turn off time in hours. After the set number of hours the stream will automatically stop (Ex 1.25 for 1 hour and 15 min)
+'-u', '--unlisted' Use to make stream unlisted
+'-a', '--autostart' Use to autostart stream
+```
