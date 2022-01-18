@@ -110,6 +110,9 @@ class Window(QWidget):
         self.create_layout()
         self.setLayout(self.mainVbox)
 
+        if self.args.autostart:
+            self.start_stream()
+
     def parseArgments(self):
         def setThumbnail(thumbnailName):
             if thumbnailName in self.titlesDict:
@@ -213,9 +216,6 @@ class Window(QWidget):
         # self.webview.settings().setAttribute(QtWebEngineWidgets.QWebEngineSettings.AllowRunningInsecureContent, True)
         # self.webview.setUrl(QUrl("https://www.youtube.com/embed/c2VD8q5hYIE?autoplay=1&livemonitor=1"))
         # self.webview.setUrl(QUrl("https://youtu.be/c2VD8q5hYIE"))
-
-        if self.args.autostart:
-            self.start_stream()
 
     def openFileClicked(self):
         filename = QFileDialog.getOpenFileName(
