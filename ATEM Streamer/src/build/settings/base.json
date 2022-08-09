@@ -2,5 +2,8 @@
     "app_name": "ATEM Streamer",
     "author": "Youssef Asaad",
     "main_module": "src/main/python/main.py",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "public_settings": [
+        "licensing_pubkey"
+    ]
 }

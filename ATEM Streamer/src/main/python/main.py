@@ -95,6 +95,7 @@ class Window(QWidget):
             "Feast of the Cross": "Feast_of_the_Cross.jpg",
             "Feast of Theophany": "Feast_of_Theophany.jpg",
             "Virgin Mary Revival (Nahda)": "Saint_Mary.jpg",
+            "Vigil of Bright Saturday": "Bright_Saturday.jpg",
         }
         self.streaming = True if self.broadcast_id is not None else False
         if self.streaming:
@@ -110,7 +111,7 @@ class Window(QWidget):
         self.create_layout()
         self.setLayout(self.mainVbox)
 
-        if self.args.autostart:
+        if self.args.autostart and self.streamAutomation.checkForCurrentLiveStream() == None:
             self.start_stream()
 
     def parseArgments(self):
@@ -235,16 +236,22 @@ class Window(QWidget):
     def create_title(self, selection):
         title = selection
         if selection == "Holy Week":
+            day = calendar.day_name[date.today().weekday()]
             if int(datetime.now().strftime("%H")) < 12:
                 # Day of current day
-                day = calendar.day_name[date.today().weekday()]
                 title = f"Day of {day} Pascha"
+                if day == "Thursday":
+                    title = "Covenant Thursday"
+                elif day == "Friday":
+                    title = "Great Friday"
             else:
                 # Eve of next day
-                day = calendar.day_name[date.today().weekday() + 1]
-                title = f"Eve of {day} Pascha"
-            # TODO: Add custom names for Thrusday Friday Saturday and Resrrection
+                next_day = calendar.day_name[date.today().weekday() + 1]
+                title = f"Eve of {next_day} Pascha"
+                if day == "Thursday":
+                    title = "Eve of Great Friday"
         return f'{title} - {date.strftime(date.today(), "%m/%d/%Y")}'
+
 
     def set_thumbnail(self, image_name):
         resource = self.ctx.get_resource(f"images/{image_name}")
